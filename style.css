@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+}
+
+/* Titolo */
+header {
+    background: url("img/wall.png") no-repeat center center;
+    background-size: cover;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Edu TAS Beginner', sans-serif;
+    font-size: 3rem;
+    margin: 0;
+    color: black;
+}
+
+/* Contenitore delle foto */
+.photos {
+    background: url("img/cork.png") repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+}
+
+/* Stile della spilletta */
+.pin {
+    width: 30px;
+    height: 30px;
+    background: url("img/pin.svg") no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Stile di ogni singola foto */
+.photo {
+    background: white;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+/* Testo sotto ogni immagine */
+.photo p {
+    font-family: 'Sometype Mono', monospace;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Stile delle immagini */
+.image {
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    border: 5px solid white;
+    margin-bottom: 10px;
+}
+
+/* Colori delle immagini */
+.green {
+    background-color: #8bc34a;
+}
+
+.purple {
+    background-color: #9c27b0;
+}
+
+.light-green {
+    background-color: #4caf50;
+}
+
+.pink {
+    background-color: #e91e63;
+}
+
+.light-pink {
+    background-color: #f06292;
+}
+
+.blue {
+    background-color: #03a9f4;
+}
