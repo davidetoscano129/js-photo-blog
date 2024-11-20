@@ -39,7 +39,7 @@ h1 {
     transform: translateX(-50%);
 }
 
-/* Stile di ogni singola foto */
+/* Contenitore di ogni singola foto */
 .photo {
     background: white;
     border: 2px solid #ddd;
@@ -48,47 +48,24 @@ h1 {
     padding: 10px;
     text-align: center;
     position: relative;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 }
 
 /* Testo sotto ogni immagine */
 .photo p {
-    font-family: 'Sometype Mono', monospace;
+    font-family: 'Sometype Mono', serif; 
     font-size: 0.9rem;
     margin-top: 10px;
     color: #333;
 }
 
-/* Stile delle immagini */
+/* Stile dell'immagine */
 .image {
-    width: 100%;
-    height: 220px;
+    width: 200px; 
+    height: 200px; 
     background-size: cover;
     background-position: center;
     border: 5px solid white;
-    margin-bottom: 10px;
-}
-
-/* Colori delle immagini */
-.green {
-    background-color: #8bc34a;
-}
-
-.purple {
-    background-color: #9c27b0;
-}
-
-.light-green {
-    background-color: #4caf50;
-}
-
-.pink {
-    background-color: #e91e63;
-}
-
-.light-pink {
-    background-color: #f06292;
-}
-
-.blue {
-    background-color: #03a9f4;
-}
+    margin-bottom: 10px; 
