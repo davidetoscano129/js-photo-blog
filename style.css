@@ -69,3 +69,24 @@ h1 {
     background-position: center;
     border: 5px solid white;
     margin-bottom: 10px; 
+}
+
+/* Overlay */
+#overlay {
+    position: fixed;
+    display: none; 
+    width: 100vw; 
+    height: 100vh; 
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 1000;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+/* Contenuto centrale */
+.overlay-content img {
+    max-width: 80%;
+    max-height: 70%;
+}
