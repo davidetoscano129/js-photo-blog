@@ -48,14 +48,14 @@ h1 {
     padding: 10px;
     text-align: center;
     position: relative;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Testo sotto ogni immagine */
 .photo p {
-    font-family: 'Sometype Mono', serif; 
+    font-family: 'Sometype Mono', serif;
     font-size: 0.9rem;
     margin-top: 10px;
     color: #333;
@@ -63,27 +63,33 @@ h1 {
 
 /* Stile dell'immagine */
 .image {
-    width: 200px; 
-    height: 200px; 
+    width: 200px;
+    height: 200px;
     background-size: cover;
     background-position: center;
     border: 5px solid white;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 /* Overlay */
 #overlay {
     position: fixed;
-    display: none; /* Nasconde di default */
-    width: 100vw; /* Copre l'intera larghezza */
-    height: 100vh; /* Copre l'intera altezza */
+    display: none;
+    /* Nasconde di default */
+    width: 100vw;
+    /* Copre tutta la larghezza */
+    height: 100vh;
+    /* Copre tutta l'altezza */
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8); /* Sfondo semi-trasparente */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Sfondo semi-trasparente */
     z-index: 1000;
     display: flex;
-    justify-content: center; /* Centra orizzontalmente il contenuto */
-    align-items: center; /* Centra verticalmente il contenuto */
+    justify-content: center;
+    /* Centra orizzontalmente il contenuto */
+    align-items: center;
+    /* Centra verticalmente il contenuto */
 }
 
 /* Contenuto centrale */
@@ -110,5 +116,6 @@ h1 {
 }
 
 #close-overlay:hover {
-    background-color: darkred; /* Cambia colore al passaggio del mouse */
+    background-color: darkred;
+    /* Cambia colore al passaggio del mouse */
 }
