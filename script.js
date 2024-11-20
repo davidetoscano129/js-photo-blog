@@ -4,9 +4,9 @@ const apiUrl = "https://jsonplaceholder.typicode.com/photos?_limit=6";
 // Seleziona il contenitore delle foto
 const photoContainer = document.querySelector(".photos");
 
-// Seleziona l'overlay e l'immagine al suo interno
+// Seleziona l'overlay e il pulsante di chiusura
 const overlay = document.getElementById("overlay");
-const overlayImage = overlay.querySelector("img");
+const closeButton = document.getElementById("close-overlay");
 
 // Funzione per recuperare i dati dall'API
 function fetchPhotos() {
@@ -30,7 +30,7 @@ function fetchPhotos() {
 
         // Aggiungi un evento per aprire l'overlay cliccando sulla foto
         photoDiv.querySelector(".image").addEventListener("click", () => {
-          openOverlay(photo.url);
+          openOverlay(); 
         });
 
         photoContainer.appendChild(photoDiv);
@@ -40,8 +40,7 @@ function fetchPhotos() {
 }
 
 // Funzione per aprire l'overlay
-function openOverlay(imageUrl) {
-  overlayImage.src = imageUrl; 
+function openOverlay() {
   overlay.style.display = "flex"; 
 }
 
@@ -50,12 +49,8 @@ function closeOverlay() {
   overlay.style.display = "none"; 
 }
 
-// Evento per chiudere l'overlay cliccando sul background
-overlay.addEventListener("click", (e) => {
-    if (e.target === overlay) { 
-        closeOverlay();
-    }
-});
+// Aggiungi evento al pulsante di chiusura
+closeButton.addEventListener("click", closeOverlay);
 
 // Chiama la funzione per recuperare le immagini
 fetchPhotos();
